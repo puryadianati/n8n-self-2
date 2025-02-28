@@ -1,0 +1,25 @@
+{
+  "app_name": "myapp",
+  "description": "A simple Django app for demonstration purposes.",
+  "structure": {
+    ".": {
+      "files": [
+        "apps.py",
+        "urls.py",
+        "views.py",
+         "models.py",
+        "admin.py",
+        "__init__.py"
+      ],
+      "role": "Contains files related to the application logic."
+     }
+  },
+    "files_description": {
+      "apps.py": "Configuration file, defining settings like automatic field type and the app's name.",
+       "models.py": "Contains database model representing data structure for myapp",
+       "admin.py": "Configuration for Django's admin interface allowing data management through admin section",
+      "urls.py": "Defines the URL patterns for the app, mapping URLs to specific views.",
+      "views.py": "Contains view functions that handle requests and return responses, often rendering templates.",
+       "__init__.py": "Make the dirctory to a Python package"
+          }
+}
