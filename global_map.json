@@ -1,0 +1,60 @@
+{
+  "project_name": "mysite",
+  "structure": {
+    "/": {
+      "description": "Root directory of the project.",
+      "files": [
+        "Dockerfile",
+        "docker-compose.yml",
+        "requirements.txt",
+        "manage.py"
+      ],
+      "role": "Contains project configuration files and the main entry point for Django commands."
+    },
+    "mysite/": {
+      "description": "Django project directory (settings and main URLs).",
+      "files": [
+        "settings.py",
+        "urls.py",
+        "wsgi.py",
+        "__init__.py"
+      ],
+      "role": "Holds project-level settings, URL configurations, and WSGI configuration."
+    },
+    "myapp/": {
+      "description": "Django app directory.",
+      "files": [
+        "apps.py",
+        "urls.py",
+         "models.py",
+        "views.py",
+        "admin.py",
+         "__init__.py"
+          ],
+      "role": "Contains the application logic, views, models, and URL patterns for 'myapp'."
+    },
+
+    "templates/": {
+      "description": "Directory to stores html tempaltes ",
+       "myapp": {
+          "files": ["home.html"],
+        "role": "Templates specific to the 'myapp' application."
+      }
+    }
+  },
+  "components": {
+    "Dockerfile": "Defines the Docker image for the application.",
+    "docker-compose.yml": "Defines services, networks, and volumes for running the application with Docker Compose.",
+    "requirements.txt": "Lists project dependencies.",
+    "manage.py": "Django's command-line utility for administrative tasks.",
+    "mysite/settings.py": "Project settings.",
+    "mysite/urls.py": "Root URL configuration.",
+    "mysite/wsgi.py": "WSGI entry point for deployment.",
+    "myapp/apps.py": "Configuration for the 'myapp' app.",
+    "myapp/urls.py": "URL patterns specific to 'myapp'.",
+    "myapp/views.py": "View functions for 'myapp'.",
+     "myapp/models.py": "Database model for myapp",
+       "myapp/admin.py": "Admin interface configuraton",
+    "templates/myapp/home.html": "HTML template for the home view."
+  }
+}
